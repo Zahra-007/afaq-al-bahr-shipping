@@ -10,6 +10,7 @@ const montserrat = Montserrat({
   display: "swap",
   variable: "--font-montserrat",
 });
+type Lang = "en" | "ur";
 
 /* ══════════════════════════════════════════════════════════
    ICONS
