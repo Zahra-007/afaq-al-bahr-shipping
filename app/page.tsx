@@ -200,7 +200,7 @@ function Hero({ lang }: { lang: Lang }) {
   return (
     <section
       dir={dir}
-      className="relative z-10 min-h-screen pt-24 md:pt-32 overflow-hidden bg-gradient-to-br from-[#e8fff0] via-[#eef4ff] to-[#f5edff]"
+      className="relative z-10 min-h-[560px] md:h-screen md:min-h-[700px] overflow-hidden bg-gradient-to-br from-[#e8fff0] via-[#eef4ff] to-[#f5edff]"
       style={{ clipPath: isUr ? "polygon(0 0, 100% 0, 100% 100%, 0 88%)" : "polygon(0 0, 100% 0, 100% 88%, 0 100%)" }}
     >
 
@@ -224,10 +224,16 @@ function Hero({ lang }: { lang: Lang }) {
       <div className="relative z-10 w-full h-full flex flex-col lg:flex-row items-center justify-between overflow-hidden">
 
         {/* Text content */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center h-full px-4 sm:px-6 md:px-12 pt-10 md:pt-20 z-20">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center h-full px-4 sm:px-6 md:px-12 pt-24 md:pt-28 lg:pt-24 z-20">
           <h1
             className="text-transparent bg-clip-text bg-gradient-to-r from-[#00a67e] via-[#1fb4e0] to-[#0f74c0] lowercase mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-            style={{ letterSpacing: "-0.02em", fontWeight: 800, lineHeight: 1.1 }}
+            style={{ 
+              letterSpacing: "-0.02em", 
+              fontWeight: 800, 
+              lineHeight: 1.1,
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent"
+            }}
           >
             <span className="block">{c.h1a} {c.h1b}</span>
             <span className="block">{c.h1c}</span>
@@ -242,7 +248,7 @@ function Hero({ lang }: { lang: Lang }) {
 
         {/* Image Area */}
         <div
-          className="w-full lg:w-1/2 h-44 sm:h-52 md:h-full flex gap-3 p-3 overflow-hidden pointer-events-none mt-10 md:mt-20"
+          className="w-full lg:w-1/2 h-44 sm:h-52 lg:h-full flex gap-3 p-3 overflow-hidden pointer-events-none mt-10 lg:mt-0"
           style={{
             maskImage: "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
             WebkitMaskImage: "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)"
