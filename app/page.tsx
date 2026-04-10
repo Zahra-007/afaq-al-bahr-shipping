@@ -200,7 +200,7 @@ function Hero({ lang }: { lang: Lang }) {
   return (
     <section
       dir={dir}
-      className="relative z-10 min-h-[560px] md:h-screen md:min-h-[700px] overflow-hidden bg-gradient-to-br from-[#e8fff0] via-[#eef4ff] to-[#f5edff]"
+      className="relative z-10 min-h-screen pt-24 md:pt-32 overflow-hidden bg-gradient-to-br from-[#e8fff0] via-[#eef4ff] to-[#f5edff]"
       style={{ clipPath: isUr ? "polygon(0 0, 100% 0, 100% 100%, 0 88%)" : "polygon(0 0, 100% 0, 100% 88%, 0 100%)" }}
     >
 
@@ -221,12 +221,12 @@ function Hero({ lang }: { lang: Lang }) {
       }} />
 
       {/* Main Structural Flex Container - Automatically flips via RTL */}
-      <div className="relative z-10 w-full h-full flex flex-col lg:flex-row items-center justify-between">
+      <div className="relative z-10 w-full h-full flex flex-col lg:flex-row items-center justify-between overflow-hidden">
 
         {/* Text content */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center h-full px-4 sm:px-6 md:px-8 lg:px-16 pt-10 md:pt-20 lg:pt-24 z-20">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center h-full px-4 sm:px-6 md:px-12 pt-10 md:pt-20 z-20">
           <h1
-            className="text-transparent bg-clip-text bg-gradient-to-r from-[#00a67e] via-[#1fb4e0] to-[#0f74c0] lowercase mb-6 text-4xl sm:text-5xl md:text-6xl lg:text-[5rem]"
+            className="text-transparent bg-clip-text bg-gradient-to-r from-[#00a67e] via-[#1fb4e0] to-[#0f74c0] lowercase mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
             style={{ letterSpacing: "-0.02em", fontWeight: 800, lineHeight: 1.1 }}
           >
             <span className="block">{c.h1a} {c.h1b}</span>
@@ -242,7 +242,7 @@ function Hero({ lang }: { lang: Lang }) {
 
         {/* Image Area */}
         <div
-          className="w-full lg:w-1/2 h-52 md:h-full flex gap-3 p-3 overflow-hidden pointer-events-none"
+          className="w-full lg:w-1/2 h-44 sm:h-52 md:h-full flex gap-3 p-3 overflow-hidden pointer-events-none mt-10 md:mt-20"
           style={{
             maskImage: "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
             WebkitMaskImage: "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)"
@@ -252,7 +252,7 @@ function Hero({ lang }: { lang: Lang }) {
           <div className="relative flex-1 overflow-hidden">
             <div className="flex flex-col items-center gap-y-1" style={{ animation: "scrollUp 25s linear infinite" }}>
               {[...leftCol, ...leftCol].map((src, i) => (
-                <div key={i} className="relative w-full max-w-[260px] h-[140px] md:h-[200px] lg:h-[260px] -mt-5">
+                <div key={i} className="relative w-full max-w-[150px] sm:max-w-[200px] md:max-w-[260px] h-[100px] sm:h-[140px] md:h-[200px] lg:h-[260px] -mt-2 sm:-mt-5">
                   <Image src={src} alt={`img${i}`} fill className="object-contain object-center drop-shadow-sm" />
                 </div>
               ))}
@@ -263,7 +263,7 @@ function Hero({ lang }: { lang: Lang }) {
           <div className="relative flex-1 overflow-hidden">
             <div className="flex flex-col items-center gap-y-1" style={{ animation: "scrollDown 25s linear infinite" }}>
               {[...rightCol, ...rightCol].map((src, i) => (
-                <div key={i} className="relative w-full max-w-[260px] h-[140px] md:h-[200px] lg:h-[260px] -mt-5">
+                <div key={i} className="relative w-full max-w-[150px] sm:max-w-[200px] md:max-w-[260px] h-[100px] sm:h-[140px] md:h-[200px] lg:h-[260px] -mt-2 sm:-mt-5">
                   <Image src={src} alt={`img${i}`} fill className="object-contain object-center drop-shadow-sm" />
                 </div>
               ))}
