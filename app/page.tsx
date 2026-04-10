@@ -200,16 +200,9 @@ function Hero({ lang }: { lang: Lang }) {
   return (
     <section
       dir={dir}
-      className="relative z-10 min-h-screen pt-24 md:pt-32 overflow-hidden"
+      className="relative z-10 min-h-screen pt-24 md:pt-32 overflow-hidden bg-gradient-to-br from-[#e8fff0] via-[#eef4ff] to-[#f5edff]"
+      style={{ clipPath: isUr ? "polygon(0 0, 100% 0, 100% 100%, 0 88%)" : "polygon(0 0, 100% 0, 100% 88%, 0 100%)" }}
     >
-      {/* Absolute Background Container for Safari compatibility */}
-      <div 
-        className="absolute inset-0 z-0 bg-gradient-to-br from-[#e8fff0] via-[#eef4ff] to-[#f5edff]"
-        style={{ 
-          clipPath: isUr ? "polygon(0 0, 100% 0, 100% 100%, 0 88%)" : "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
-          WebkitClipPath: isUr ? "polygon(0 0, 100% 0, 100% 100%, 0 88%)" : "polygon(0 0, 100% 0, 100% 88%, 0 100%)"
-        }}
-      />
 
       <style>{`
         @keyframes scrollUp {
@@ -223,24 +216,18 @@ function Hero({ lang }: { lang: Lang }) {
       `}</style>
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 z-0 pointer-events-none" style={{
+      <div className="absolute inset-0 pointer-events-none" style={{
         background: "linear-gradient(110deg, rgba(34,197,94,0.22) 0%, rgba(45,45,184,0.14) 34%, rgba(139,92,246,0.12) 62%, rgba(255,255,255,0.92) 100%)",
       }} />
 
       {/* Main Structural Flex Container - Automatically flips via RTL */}
-      <div className="relative z-10 w-full h-full flex flex-col lg:flex-row items-center justify-between">
+      <div className="relative z-10 w-full h-full flex flex-col lg:flex-row items-center justify-between overflow-hidden">
 
         {/* Text content */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center h-full px-4 sm:px-6 md:px-12 pt-10 md:pt-20 z-20">
           <h1
-            className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#00a67e] via-[#1fb4e0] to-[#0f74c0] lowercase mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-            style={{ 
-              letterSpacing: "-0.02em", 
-              fontWeight: 800, 
-              lineHeight: 1.1,
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent"
-            }}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-[#00a67e] via-[#1fb4e0] to-[#0f74c0] lowercase mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+            style={{ letterSpacing: "-0.02em", fontWeight: 800, lineHeight: 1.1 }}
           >
             <span className="block">{c.h1a} {c.h1b}</span>
             <span className="block">{c.h1c}</span>
