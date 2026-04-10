@@ -200,7 +200,7 @@ function Hero({ lang }: { lang: Lang }) {
   return (
     <section
       dir={dir}
-      className="relative z-10 h-screen min-h-[700px] overflow-hidden bg-gradient-to-br from-[#e8fff0] via-[#eef4ff] to-[#f5edff]"
+      className="relative z-10 min-h-[560px] md:h-screen md:min-h-[700px] overflow-hidden bg-gradient-to-br from-[#e8fff0] via-[#eef4ff] to-[#f5edff]"
       style={{ clipPath: isUr ? "polygon(0 0, 100% 0, 100% 100%, 0 88%)" : "polygon(0 0, 100% 0, 100% 88%, 0 100%)" }}
     >
 
@@ -224,7 +224,7 @@ function Hero({ lang }: { lang: Lang }) {
       <div className="relative z-10 w-full h-full flex flex-col lg:flex-row items-center justify-between">
 
         {/* Text content */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center h-full px-8 lg:px-16 pt-24 z-20">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center h-full px-4 md:px-8 lg:px-16 pt-20 md:pt-24 z-20">
           <h1
             className="text-transparent bg-clip-text bg-gradient-to-r from-[#00a67e] via-[#1fb4e0] to-[#0f74c0] lowercase mb-6"
             style={{ letterSpacing: "-0.02em", fontSize: "clamp(2.5rem, 5vw, 5rem)", fontWeight: 800, lineHeight: 1.1 }}
@@ -233,7 +233,7 @@ function Hero({ lang }: { lang: Lang }) {
             <span className="block">{c.h1c}</span>
           </h1>
 
-          <p className="text-slate-600 text-base max-w-sm leading-relaxed mb-10">{c.sub}</p>
+          <p className="text-slate-600 text-base max-w-sm leading-relaxed mb-6 md:mb-10">{c.sub}</p>
 
           <a href="/services" className="inline-flex items-center justify-center gap-2 w-fit rounded-full bg-[#2d2db8] px-7 py-3 text-base font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#243cb8]">
             {c.btn}
@@ -242,7 +242,7 @@ function Hero({ lang }: { lang: Lang }) {
 
         {/* Image Area */}
         <div
-          className="w-full lg:w-1/2 h-full flex gap-3 p-3 overflow-hidden pointer-events-none"
+          className="w-full lg:w-1/2 h-52 md:h-full flex gap-3 p-3 overflow-hidden pointer-events-none"
           style={{
             maskImage: "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
             WebkitMaskImage: "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)"
@@ -252,7 +252,7 @@ function Hero({ lang }: { lang: Lang }) {
           <div className="relative flex-1 overflow-hidden">
             <div className="flex flex-col items-center gap-y-1" style={{ animation: "scrollUp 25s linear infinite" }}>
               {[...leftCol, ...leftCol].map((src, i) => (
-                <div key={i} className="relative w-full max-w-[260px] h-[200px] lg:h-[260px] -mt-5">
+                <div key={i} className="relative w-full max-w-[260px] h-[140px] md:h-[200px] lg:h-[260px] -mt-5">
                   <Image src={src} alt={`img${i}`} fill className="object-contain object-center drop-shadow-sm" />
                 </div>
               ))}
@@ -263,7 +263,7 @@ function Hero({ lang }: { lang: Lang }) {
           <div className="relative flex-1 overflow-hidden">
             <div className="flex flex-col items-center gap-y-1" style={{ animation: "scrollDown 25s linear infinite" }}>
               {[...rightCol, ...rightCol].map((src, i) => (
-                <div key={i} className="relative w-full max-w-[260px] h-[200px] lg:h-[260px] -mt-5">
+                <div key={i} className="relative w-full max-w-[260px] h-[140px] md:h-[200px] lg:h-[260px] -mt-5">
                   <Image src={src} alt={`img${i}`} fill className="object-contain object-center drop-shadow-sm" />
                 </div>
               ))}
@@ -285,11 +285,11 @@ function Services({ lang }: { lang: Lang }) {
   const dir = T[lang].dir;
 
   return (
-    <section id="s0" dir={dir} className="bg-white py-28 overflow-hidden">
-      <div className="max-w-screen-xl mx-auto px-6 lg:px-12">
+    <section id="s0" dir={dir} className="bg-white py-16 md:py-28 overflow-hidden">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12">
 
         {/* Header */}
-        <div className="mb-16 text-center lg:text-left">
+        <div className="mb-8 md:mb-16 text-center lg:text-left">
           <h2 className="text-[2.5rem] lg:text-[3.5rem] font-extrabold pb-2 text-[#0d0d2b] leading-[1.15] tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#0d0d2b] to-[#2d2db8] inline-block">
             {c.h2}
           </h2>
@@ -300,7 +300,7 @@ function Services({ lang }: { lang: Lang }) {
           {c.items.slice(0, 3).map((item, i) => (
             <div
               key={i}
-              className="group relative rounded-3xl bg-white border border-slate-100 p-8 shadow-sm hover:shadow-[0_20px_60px_rgba(45,45,184,0.10)] transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+              className="group relative rounded-3xl bg-white border border-slate-100 p-5 md:p-8 shadow-sm hover:shadow-[0_20px_60px_rgba(45,45,184,0.10)] transition-all duration-300 hover:-translate-y-1 overflow-hidden"
             >
               {/* Accent blob */}
               <div className="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-gradient-to-br from-[#2d2db8]/8 to-[#22c55e]/6 blur-2xl group-hover:scale-150 transition-transform duration-500" />
@@ -333,19 +333,19 @@ function About({ lang }: { lang: Lang }) {
   const dir = T[lang].dir;
 
   return (
-    <section id="s1" dir={dir} className="bg-white py-28 overflow-hidden">
-      <div className="max-w-screen-xl mx-auto px-6 lg:px-12">
+    <section id="s1" dir={dir} className="bg-white py-16 md:py-28 overflow-hidden">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12">
 
         {/* Top: info */}
-        <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:items-center mb-24">
+        <div className="grid gap-8 md:gap-12 lg:grid-cols-[1.3fr_1fr] lg:items-center mb-12 md:mb-24">
 
-          <div className="group relative overflow-hidden rounded-[3rem] border border-slate-100 bg-white p-10 lg:p-16 shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_60px_rgba(45,45,184,0.06)] transition-all duration-500">
+          <div className="group relative overflow-hidden rounded-[2rem] md:rounded-[3rem] border border-slate-100 bg-white p-6 md:p-10 lg:p-16 shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_60px_rgba(45,45,184,0.06)] transition-all duration-500">
             {/* Background Blob */}
             <div className="absolute -top-32 -left-32 w-80 h-80 bg-gradient-to-br from-[#2d2db8]/5 to-[#22c55e]/5 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
 
             <div className="relative z-10">
               <h2 className="text-[2.5rem] lg:text-[3.5rem] font-extrabold pb-2 text-[#0d0d2b] leading-[1.15] mb-8 max-w-2xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#0d0d2b] to-[#2d2db8] inline-block">{c.h2}</h2>
-              <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-2xl mb-12 text-balance">{c.body}</p>
+              <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-2xl mb-6 md:mb-12 text-balance">{c.body}</p>
 
               <div className="grid gap-4">
                 {c.points.map((p, i) => (
@@ -378,7 +378,7 @@ function About({ lang }: { lang: Lang }) {
         </div>
 
         {/* Founder — modern quote panel */}
-        <div className="relative overflow-hidden rounded-[2.5rem] bg-white/95 px-6 py-8 shadow-[0_20px_60px_rgba(34,86,198,0.08)] border border-slate-200/50 sm:px-8 lg:px-10 lg:py-12">
+        <div className="relative overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] bg-white/95 px-4 py-6 shadow-[0_20px_60px_rgba(34,86,198,0.08)] border border-slate-200/50 sm:px-8 md:py-8 lg:px-10 lg:py-12">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,197,94,0.08),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(140,103,255,0.08),transparent_30%)]" />
 
           <div className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] items-center">
@@ -433,24 +433,24 @@ function Contact({ lang }: { lang: Lang }) {
   const [sent, setSent] = useState(false);
 
   return (
-    <section id="s2" dir={dir} className="bg-white py-28 relative">
-      <div className="max-w-screen-xl mx-auto px-6 lg:px-12 relative z-10">
+    <section id="s2" dir={dir} className="bg-white py-12 md:py-28 relative">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 relative z-10">
 
         {/* Form Container matching global design */}
-        <div className="bg-white rounded-[2.5rem] p-8 md:p-12 lg:p-16 shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-slate-100 relative overflow-hidden group">
+        <div className="bg-white rounded-[1.5rem] md:rounded-[2.5rem] p-5 md:p-12 lg:p-16 shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-slate-100 relative overflow-hidden group">
 
           {/* Subtle Accent Orbs */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#2d2db8]/5 to-transparent rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform duration-700" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-[#22c55e]/5 to-transparent rounded-tr-full pointer-events-none group-hover:scale-110 transition-transform duration-700" />
 
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start relative z-10">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-16 lg:gap-24 items-start relative z-10">
 
             {/* Left */}
             <div className="flex flex-col h-full justify-center">
               <h2 className="text-4xl lg:text-5xl font-extrabold text-[#0d0d2b] tracking-tight mb-6 whitespace-pre-line bg-clip-text text-transparent bg-gradient-to-r from-[#2d2db8] to-[#22c55e] inline-block">{c.h2}</h2>
-              <p className="text-slate-500 text-lg leading-relaxed mb-10 max-w-sm">{c.sub}</p>
+              <p className="text-slate-500 text-base md:text-lg leading-relaxed mb-6 md:mb-10 max-w-sm">{c.sub}</p>
 
-              <div className="flex flex-col sm:flex-row gap-10 opacity-90 pt-8 border-t border-slate-100">
+              <div className="flex flex-col sm:flex-row gap-6 md:gap-10 opacity-90 pt-6 md:pt-8 border-t border-slate-100">
                 <div>
                   <p className="text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-3">Office</p>
                   <div className="flex items-center gap-3 text-slate-700">

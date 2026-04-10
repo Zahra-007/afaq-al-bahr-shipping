@@ -68,11 +68,11 @@ export default function ContactPage() {
         <div dir={c.dir} className="bg-[#f8f9ff] min-h-screen pb-24">
             
             {/* Header Area */}
-            <div className="pt-20 pb-20 bg-white border-b border-slate-100 relative overflow-hidden">
+            <div className="pt-16 md:pt-20 pb-10 md:pb-20 bg-white border-b border-slate-100 relative overflow-hidden">
                 {/* Decorative blob */}
                 <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-gradient-to-r from-[#2d2db8]/5 to-[#22c55e]/10 blur-[80px] rounded-full pointer-events-none" />
                 
-                <div className="max-w-screen-xl mx-auto px-6 lg:px-12 relative z-10 text-center">
+                <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 relative z-10 text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0d0d2b] tracking-tight mb-6">
                         {c.heading}
                     </h1>
@@ -82,12 +82,12 @@ export default function ContactPage() {
                 </div>
             </div>
 
-            <div className="max-w-screen-xl mx-auto px-6 lg:px-12 -mt-10 relative z-20 space-y-24">
+            <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 mt-4 md:-mt-10 relative z-20 space-y-10 md:space-y-24">
                 
                 {/* Info Cards Grid */}
                 <section className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {c.cards.map((card, i) => (
-                        <div key={i} className="bg-white rounded-3xl p-8 shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-slate-100 hover:shadow-[0_20px_50px_rgba(45,45,184,0.08)] transition-all duration-300 hover:-translate-y-1 group flex flex-col items-center text-center">
+                        <div key={i} className="bg-white rounded-3xl p-5 md:p-8 shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-slate-100 hover:shadow-[0_20px_50px_rgba(45,45,184,0.08)] transition-all duration-300 hover:-translate-y-1 group flex flex-col items-center text-center">
                             
                             <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#f0f4ff] to-[#f0fff4] flex items-center justify-center text-[#2d2db8] mb-6 group-hover:scale-110 transition-transform duration-300">
                                 {card.icon}
@@ -118,7 +118,7 @@ export default function ContactPage() {
                 <section className="grid lg:grid-cols-2 gap-10 items-stretch">
                     
                     {/* Form Container */}
-                    <div className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-slate-100 relative overflow-hidden">
+                    <div className="bg-white rounded-[1.5rem] md:rounded-[2.5rem] p-5 md:p-12 shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-slate-100 relative overflow-hidden">
                         
                         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-[#2d2db8]/5 to-transparent rounded-bl-[100px] pointer-events-none" />
                         
@@ -176,7 +176,7 @@ export default function ContactPage() {
                     </div>
 
                     {/* Quick WhatsApp CTA Card */}
-                    <div className="bg-gradient-to-br from-[#101036] to-[#2d2db8] rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden flex flex-col justify-center text-center lg:text-left group shadow-2xl">
+                    <div className="bg-gradient-to-br from-[#101036] to-[#2d2db8] rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-12 relative overflow-hidden flex flex-col justify-center text-center lg:text-left group shadow-2xl">
                         {/* Abstract background rings */}
                         <div className="absolute top-0 right-0 w-96 h-96 border-[40px] border-white/5 rounded-full -translate-y-1/2 translate-x-1/3 group-hover:scale-110 transition-transform duration-700 pointer-events-none" />
                         <div className="absolute bottom-0 left-0 w-64 h-64 border-[30px] border-[#22c55e]/10 rounded-full translate-y-1/3 -translate-x-1/4 group-hover:scale-110 transition-transform duration-700 pointer-events-none" />

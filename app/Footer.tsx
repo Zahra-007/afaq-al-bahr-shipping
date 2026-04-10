@@ -42,13 +42,13 @@ function Footer() {
     const t = isUr ? 'hover:-translate-x-1' : 'hover:translate-x-1';
 
     return (
-        <footer dir={dir} className="bg-white pt-24 mt-auto border-t border-slate-100 overflow-hidden relative">
+        <footer dir={dir} className="bg-white pt-12 md:pt-24 mt-auto border-t border-slate-100 overflow-hidden relative">
             {/* Background Blob */}
             <div className="absolute top-0 right-0 w-[800px] h-[400px] bg-gradient-to-b from-[#2d2db8]/5 to-transparent rounded-bl-full blur-3xl pointer-events-none" />
 
             <div className="max-w-screen-xl mx-auto px-6 lg:px-12 relative z-10">
                 
-                <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-12 lg:gap-16 pb-20">
+                <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-8 md:gap-12 lg:gap-16 pb-10 md:pb-20">
                     
                     {/* Brand */}
                     <div className="flex flex-col">

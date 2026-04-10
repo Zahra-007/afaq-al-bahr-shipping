@@ -122,10 +122,10 @@ export default function ServicesPage() {
         <div dir={c.dir} className="bg-[#f8f9ff] min-h-screen pb-24">
             
             {/* Header Area */}
-            <div className="pt-20 pb-16 bg-white border-b border-slate-100 relative overflow-hidden">
+            <div className="pt-16 md:pt-20 pb-10 md:pb-16 bg-white border-b border-slate-100 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-[#2d2db8]/5 to-[#22c55e]/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/3" />
                 
-                <div className="max-w-screen-xl mx-auto px-6 lg:px-12 relative z-10 text-center">
+                <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 relative z-10 text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0d0d2b] tracking-tight mb-6">
                         {c.heading}
                     </h1>
@@ -135,12 +135,12 @@ export default function ServicesPage() {
                 </div>
             </div>
 
-            <div className="max-w-screen-xl mx-auto px-6 lg:px-12 mt-20 space-y-24">
+            <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 mt-10 md:mt-20 space-y-12 md:space-y-24">
                 
                 {/* Services Grid */}
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {c.services.map((srv, i) => (
-                        <div key={i} className="group relative bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-[0_20px_60px_rgba(45,45,184,0.10)] transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col h-full">
+                        <div key={i} className="group relative bg-white rounded-3xl p-5 md:p-8 border border-slate-100 shadow-sm hover:shadow-[0_20px_60px_rgba(45,45,184,0.10)] transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col h-full">
                             
                             {/* Decorative background aura on hover */}
                             <div className="absolute -top-20 -right-20 w-48 h-48 bg-gradient-to-br from-[#2d2db8]/10 to-[#22c55e]/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
@@ -173,13 +173,13 @@ export default function ServicesPage() {
                 </section>
 
                 {/* Why Choose Us */}
-                <section className="bg-white rounded-[2.5rem] p-8 md:p-14 lg:p-16 border border-slate-100 shadow-[0_10px_40px_rgba(0,0,0,0.03)]">
-                    <div className="text-center mb-16">
+                <section className="bg-white rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-14 lg:p-16 border border-slate-100 shadow-[0_10px_40px_rgba(0,0,0,0.03)]">
+                    <div className="text-center mb-8 md:mb-16">
                         <h2 className="text-3xl md:text-4xl font-extrabold text-[#0d0d2b] mb-4">{c.why}</h2>
                         <p className="text-slate-500 text-lg">{c.whySub}</p>
                     </div>
 
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
                         {c.whyPoints.map((wp, i) => (
                             <div key={i} className="text-center relative">
                                 <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-b from-[#2d2db8]/5 to-transparent rounded-2xl opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
@@ -198,7 +198,7 @@ export default function ServicesPage() {
                     <div className="absolute inset-0 bg-gradient-to-r from-[#2d2db8] to-[#22c55e]" />
                     <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.8)_0,transparent_50%)] group-hover:scale-150 transition-transform duration-1000" />
                     
-                    <div className="relative z-10 px-6 py-16 md:py-20 flex flex-col items-center text-center">
+                    <div className="relative z-10 px-4 md:px-6 py-10 md:py-20 flex flex-col items-center text-center">
                         <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">
                             {c.ctaTitle}
                         </h2>
