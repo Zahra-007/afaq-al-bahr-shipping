@@ -224,7 +224,7 @@ function Hero({ lang }: { lang: Lang }) {
       <div className="relative z-10 w-full h-full flex flex-col lg:flex-row items-center justify-between overflow-hidden">
 
         {/* Text content */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center h-full px-4 sm:px-6 md:px-12 pt-24 md:pt-28 lg:pt-24 z-20">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center h-full px-4 sm:px-6 md:px-12 pt-36 md:pt-40 lg:pt-24 z-20">
           <h1
             className="text-transparent bg-clip-text bg-gradient-to-r from-[#00a67e] via-[#1fb4e0] to-[#0f74c0] lowercase mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
             style={{ 
