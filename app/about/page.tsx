@@ -68,7 +68,7 @@ export default function AboutPage() {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[300px] bg-gradient-to-r from-[#2d2db8]/5 to-[#22c55e]/10 blur-[80px] rounded-full pointer-events-none" />
                 
                 <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 relative z-10 text-center">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0d0d2b] tracking-tight mb-6">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0d0d2b] tracking-tight mb-6">
                         {c.heading}
                     </h1>
                     <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto font-medium">
@@ -82,7 +82,7 @@ export default function AboutPage() {
                 {/* Who We Are */}
                 <section className="bg-white rounded-[1.5rem] md:rounded-[2.5rem] p-5 md:p-12 lg:p-16 shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-slate-100 relative overflow-hidden group">
                     <div className="absolute -top-32 -right-32 w-64 h-64 bg-gradient-to-br from-[#2d2db8]/10 to-[#22c55e]/5 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700" />
-                    <h2 className="text-3xl font-bold text-[#0d0d2b] mb-6 inline-block relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-[#2d2db8] to-[#22c55e]">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0d0d2b] mb-6 inline-block relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-[#2d2db8] to-[#22c55e]">
                         {c.who}
                     </h2>
                     <p className="text-slate-600 text-base md:text-lg leading-relaxed text-balance relative z-10">
@@ -98,7 +98,7 @@ export default function AboutPage() {
                         <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#f0f4ff] to-[#f0fff4] flex items-center justify-center text-[#2d2db8] mb-8 shadow-inner relative z-10 group-hover:scale-110 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                         </div>
-                        <h3 className="text-2xl lg:text-3xl font-bold text-[#0d0d2b] mb-4 relative z-10">{c.mv.m}</h3>
+                        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0d0d2b] mb-4 relative z-10">{c.mv.m}</h3>
                         <p className="text-slate-500 leading-relaxed text-lg relative z-10">{c.mv.mDesc}</p>
                     </div>
 
@@ -108,7 +108,7 @@ export default function AboutPage() {
                         <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#f0fff4] to-[#f0f4ff] flex items-center justify-center text-[#22c55e] mb-8 shadow-inner relative z-10 group-hover:scale-110 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><path d="M2 12h3M19 12h3M12 2v3M12 19v3M5 5l2 2M17 17l2 2M19 5l-2 2M5 19l2-2"/><circle cx="12" cy="12" r="4"/></svg>
                         </div>
-                        <h3 className="text-2xl lg:text-3xl font-bold text-[#0d0d2b] mb-4 relative z-10">{c.mv.v}</h3>
+                        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0d0d2b] mb-4 relative z-10">{c.mv.v}</h3>
                         <p className="text-slate-500 leading-relaxed text-lg relative z-10">{c.mv.vDesc}</p>
                     </div>
                 </section>
@@ -116,7 +116,7 @@ export default function AboutPage() {
                 {/* What Makes Us Different */}
                 <section>
                     <div className="text-center mb-6 md:mb-12">
-                        <h2 className="text-3xl lg:text-4xl font-extrabold text-[#0d0d2b]">{c.diff}</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0d0d2b]">{c.diff}</h2>
                     </div>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {c.diffPts.map((pt, i) => (
@@ -156,7 +156,7 @@ export default function AboutPage() {
 
                 {/* Strong Closing Line */}
                 <section className="text-center pt-8">
-                    <h2 className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#2d2db8] to-[#22c55e] inline-block">
+                    <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#2d2db8] to-[#22c55e] inline-block">
                         {c.closing}
                     </h2>
                 </section>

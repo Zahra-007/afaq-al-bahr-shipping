@@ -224,10 +224,10 @@ function Hero({ lang }: { lang: Lang }) {
       <div className="relative z-10 w-full h-full flex flex-col lg:flex-row items-center justify-between">
 
         {/* Text content */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center h-full px-4 md:px-8 lg:px-16 pt-20 md:pt-24 z-20">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center h-full px-4 sm:px-6 md:px-8 lg:px-16 pt-10 md:pt-20 lg:pt-24 z-20">
           <h1
-            className="text-transparent bg-clip-text bg-gradient-to-r from-[#00a67e] via-[#1fb4e0] to-[#0f74c0] lowercase mb-6"
-            style={{ letterSpacing: "-0.02em", fontSize: "clamp(2.5rem, 5vw, 5rem)", fontWeight: 800, lineHeight: 1.1 }}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-[#00a67e] via-[#1fb4e0] to-[#0f74c0] lowercase mb-6 text-4xl sm:text-5xl md:text-6xl lg:text-[5rem]"
+            style={{ letterSpacing: "-0.02em", fontWeight: 800, lineHeight: 1.1 }}
           >
             <span className="block">{c.h1a} {c.h1b}</span>
             <span className="block">{c.h1c}</span>
@@ -290,7 +290,7 @@ function Services({ lang }: { lang: Lang }) {
 
         {/* Header */}
         <div className="mb-8 md:mb-16 text-center lg:text-left">
-          <h2 className="text-[2.5rem] lg:text-[3.5rem] font-extrabold pb-2 text-[#0d0d2b] leading-[1.15] tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#0d0d2b] to-[#2d2db8] inline-block">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold pb-2 text-[#0d0d2b] leading-[1.15] tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#0d0d2b] to-[#2d2db8] inline-block">
             {c.h2}
           </h2>
         </div>
@@ -344,7 +344,7 @@ function About({ lang }: { lang: Lang }) {
             <div className="absolute -top-32 -left-32 w-80 h-80 bg-gradient-to-br from-[#2d2db8]/5 to-[#22c55e]/5 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
 
             <div className="relative z-10">
-              <h2 className="text-[2.5rem] lg:text-[3.5rem] font-extrabold pb-2 text-[#0d0d2b] leading-[1.15] mb-8 max-w-2xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#0d0d2b] to-[#2d2db8] inline-block">{c.h2}</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold pb-2 text-[#0d0d2b] leading-[1.15] mb-8 max-w-2xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#0d0d2b] to-[#2d2db8] inline-block">{c.h2}</h2>
               <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-2xl mb-6 md:mb-12 text-balance">{c.body}</p>
 
               <div className="grid gap-4">
@@ -371,14 +371,14 @@ function About({ lang }: { lang: Lang }) {
                 <Image src="/logo.png" alt="ABS" fill className="object-contain p-14 drop-shadow-xl group-hover:drop-shadow-[0_20px_40px_rgba(45,45,184,0.3)] transition-all duration-500" />
               </div>
             </div>
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-[#2d2db8] to-[#22c55e] px-4 md:px-8 py-4 text-sm font-bold text-white shadow-[0_15px_30px_rgba(34,197,94,0.3)] transform group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(34,197,94,0.4)] transition-all duration-500 whitespace-nowrap z-20" style={{ letterSpacing: "0.05em" }}>
+            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-[#2d2db8] to-[#22c55e] px-4 sm:px-6 md:px-8 py-4 text-sm font-bold text-white shadow-[0_15px_30px_rgba(34,197,94,0.3)] transform group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(34,197,94,0.4)] transition-all duration-500 whitespace-nowrap z-20" style={{ letterSpacing: "0.05em" }}>
               Dubai, UAE — Est. 2022
             </div>
           </div>
         </div>
 
         {/* Founder — modern quote panel */}
-        <div className="relative overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] bg-white/95 px-4 py-6 shadow-[0_20px_60px_rgba(34,86,198,0.08)] border border-slate-200/50 sm:px-8 md:py-8 lg:px-10 lg:py-12">
+        <div className="relative overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] bg-white/95 px-4 py-6 shadow-[0_20px_60px_rgba(34,86,198,0.08)] border border-slate-200/50 sm:px-6 md:px-8 md:py-8 lg:px-10 lg:py-12">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,197,94,0.08),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(140,103,255,0.08),transparent_30%)]" />
 
           <div className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] items-center">
@@ -396,7 +396,7 @@ function About({ lang }: { lang: Lang }) {
 
               {/* Name */}
               <div>
-                <p className="text-[2rem] lg:text-[2.6rem] font-black leading-[1.05] tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#0d0d2b] to-[#2d2db8]">
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.6rem] font-black leading-[1.05] tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#0d0d2b] to-[#2d2db8]">
                   {c.founderName}
                 </p>
               </div>
@@ -447,7 +447,7 @@ function Contact({ lang }: { lang: Lang }) {
 
             {/* Left */}
             <div className="flex flex-col h-full justify-center">
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-[#0d0d2b] tracking-tight mb-6 whitespace-pre-line bg-clip-text text-transparent bg-gradient-to-r from-[#2d2db8] to-[#22c55e] inline-block">{c.h2}</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-[#0d0d2b] tracking-tight mb-6 whitespace-pre-line bg-clip-text text-transparent bg-gradient-to-r from-[#2d2db8] to-[#22c55e] inline-block">{c.h2}</h2>
               <p className="text-slate-500 text-base md:text-lg leading-relaxed mb-6 md:mb-10 max-w-sm">{c.sub}</p>
 
               <div className="flex flex-col sm:flex-row gap-4 md:gap-10 opacity-90 pt-6 md:pt-8 border-t border-slate-100">

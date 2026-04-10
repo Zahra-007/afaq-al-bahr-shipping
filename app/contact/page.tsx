@@ -74,7 +74,7 @@ export default function ContactPage() {
                 <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-gradient-to-r from-[#2d2db8]/5 to-[#22c55e]/10 blur-[80px] rounded-full pointer-events-none" />
 
                 <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 relative z-10 text-center">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0d0d2b] tracking-tight mb-6">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0d0d2b] tracking-tight mb-6">
                         {c.heading}
                     </h1>
                     <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
@@ -123,7 +123,7 @@ export default function ContactPage() {
 
                         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-[#2d2db8]/5 to-transparent rounded-bl-[100px] pointer-events-none" />
 
-                        <h2 className="text-2xl md:text-3xl font-extrabold text-[#0d0d2b] mb-8 relative z-10">{c.formLabel}</h2>
+                        <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#0d0d2b] mb-8 relative z-10">{c.formLabel}</h2>
 
                         {sent ? (
                             <div className="bg-green-50 rounded-3xl p-10 flex flex-col items-center justify-center text-center h-full min-h-[300px] border border-green-100 animate-fade-in relative z-10">
@@ -187,7 +187,7 @@ export default function ContactPage() {
                                 {I.wa}
                             </div>
 
-                            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-6">
                                 {c.ctaTitle}
                             </h2>
                             <p className="text-blue-100 text-lg leading-relaxed mb-10 max-w-sm">
@@ -195,7 +195,7 @@ export default function ContactPage() {
                             </p>
 
                             <a href={`https://wa.me/${WA_NUM}`} target="_blank" rel="noopener noreferrer"
-                                className="inline-flex items-center gap-3 bg-[#22c55e] hover:bg-[#1ea950] text-white px-4 md:px-8 py-4 rounded-full font-bold text-lg shadow-[0_10px_30px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-300"
+                                className="inline-flex items-center gap-3 bg-[#22c55e] hover:bg-[#1ea950] text-white px-4 sm:px-6 md:px-8 py-4 rounded-full font-bold text-lg shadow-[0_10px_30px_rgba(34,197,94,0.3)] hover:-translate-y-1 transition-all duration-300"
                             >
                                 <span>{c.ctaBtn}</span>
                                 <svg className={`w-5 h-5 ${isUr ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>

@@ -23,7 +23,7 @@ function Navbar() {
                 <div className="relative rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(15,23,42,0.16)]">
                     <div className="absolute inset-0 bg-white/20 backdrop-blur-xl border border-white/30" />
 
-                    <div className="relative flex items-center justify-between h-20 px-4 md:px-8">
+                    <div className="relative flex items-center justify-between h-20 px-4 sm:px-6 md:px-8">
 
                         {/* LEFT */}
                         <div className="flex items-center gap-8">

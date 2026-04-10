@@ -127,7 +127,7 @@ export default function ServicesPage() {
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-[#2d2db8]/5 to-[#22c55e]/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/3" />
                 
                 <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12 relative z-10 text-center">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0d0d2b] tracking-tight mb-6">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0d0d2b] tracking-tight mb-6">
                         {c.heading}
                     </h1>
                     <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto font-medium">
@@ -150,7 +150,7 @@ export default function ServicesPage() {
                                 {iconsArray[i]}
                             </div>
 
-                            <h3 className="text-2xl font-bold text-[#0d0d2b] mb-4 relative z-10">
+                            <h3 className="text-xl sm:text-2xl font-bold text-[#0d0d2b] mb-4 relative z-10">
                                 {srv.title}
                             </h3>
                             
@@ -176,7 +176,7 @@ export default function ServicesPage() {
                 {/* Why Choose Us */}
                 <section className="bg-white rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-14 lg:p-16 border border-slate-100 shadow-[0_10px_40px_rgba(0,0,0,0.03)]">
                     <div className="text-center mb-8 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-[#0d0d2b] mb-4">{c.why}</h2>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0d0d2b] mb-4">{c.why}</h2>
                         <p className="text-slate-500 text-lg">{c.whySub}</p>
                     </div>
 
@@ -200,7 +200,7 @@ export default function ServicesPage() {
                     <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.8)_0,transparent_50%)] group-hover:scale-150 transition-transform duration-1000" />
                     
                     <div className="relative z-10 px-4 md:px-6 py-10 md:py-20 flex flex-col items-center text-center">
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-white mb-6 tracking-tight">
                             {c.ctaTitle}
                         </h2>
                         <p className="text-blue-100 text-lg mb-10 max-w-xl">
