@@ -119,7 +119,8 @@ export default function ServicesPage() {
     const c = T[lang as keyof typeof T];
 
     return (
-        <div dir={c.dir} className="bg-[#f8f9ff] min-h-screen pb-24">
+        <div className="pt-24 md:pt-28">
+            <div dir={c.dir} className="bg-[#f8f9ff] min-h-screen pb-24">
             
             {/* Header Area */}
             <div className="pt-16 md:pt-20 pb-10 md:pb-16 bg-white border-b border-slate-100 relative overflow-hidden">
@@ -214,6 +215,7 @@ export default function ServicesPage() {
                     </div>
                 </section>
 
+            </div>
             </div>
         </div>
     );
