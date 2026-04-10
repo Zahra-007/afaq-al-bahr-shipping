@@ -48,7 +48,7 @@ function Footer() {
 
             <div className="max-w-screen-xl mx-auto px-6 lg:px-12 relative z-10">
                 
-                <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-8 md:gap-12 lg:gap-16 pb-10 md:pb-20">
+                <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-4 md:gap-12 lg:gap-16 pb-10 md:pb-20">
                     
                     {/* Brand */}
                     <div className="flex flex-col">

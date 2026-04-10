@@ -337,7 +337,7 @@ function About({ lang }: { lang: Lang }) {
       <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-12">
 
         {/* Top: info */}
-        <div className="grid gap-8 md:gap-12 lg:grid-cols-[1.3fr_1fr] lg:items-center mb-12 md:mb-24">
+        <div className="grid gap-4 md:gap-12 lg:grid-cols-[1.3fr_1fr] lg:items-center mb-12 md:mb-24">
 
           <div className="group relative overflow-hidden rounded-[2rem] md:rounded-[3rem] border border-slate-100 bg-white p-6 md:p-10 lg:p-16 shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_60px_rgba(45,45,184,0.06)] transition-all duration-500">
             {/* Background Blob */}
@@ -371,7 +371,7 @@ function About({ lang }: { lang: Lang }) {
                 <Image src="/logo.png" alt="ABS" fill className="object-contain p-14 drop-shadow-xl group-hover:drop-shadow-[0_20px_40px_rgba(45,45,184,0.3)] transition-all duration-500" />
               </div>
             </div>
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-[#2d2db8] to-[#22c55e] px-8 py-4 text-sm font-bold text-white shadow-[0_15px_30px_rgba(34,197,94,0.3)] transform group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(34,197,94,0.4)] transition-all duration-500 whitespace-nowrap z-20" style={{ letterSpacing: "0.05em" }}>
+            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-[#2d2db8] to-[#22c55e] px-4 md:px-8 py-4 text-sm font-bold text-white shadow-[0_15px_30px_rgba(34,197,94,0.3)] transform group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(34,197,94,0.4)] transition-all duration-500 whitespace-nowrap z-20" style={{ letterSpacing: "0.05em" }}>
               Dubai, UAE — Est. 2022
             </div>
           </div>
@@ -450,7 +450,7 @@ function Contact({ lang }: { lang: Lang }) {
               <h2 className="text-4xl lg:text-5xl font-extrabold text-[#0d0d2b] tracking-tight mb-6 whitespace-pre-line bg-clip-text text-transparent bg-gradient-to-r from-[#2d2db8] to-[#22c55e] inline-block">{c.h2}</h2>
               <p className="text-slate-500 text-base md:text-lg leading-relaxed mb-6 md:mb-10 max-w-sm">{c.sub}</p>
 
-              <div className="flex flex-col sm:flex-row gap-6 md:gap-10 opacity-90 pt-6 md:pt-8 border-t border-slate-100">
+              <div className="flex flex-col sm:flex-row gap-4 md:gap-10 opacity-90 pt-6 md:pt-8 border-t border-slate-100">
                 <div>
                   <p className="text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-3">Office</p>
                   <div className="flex items-center gap-3 text-slate-700">
